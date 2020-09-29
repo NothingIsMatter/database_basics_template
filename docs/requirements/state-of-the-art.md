@@ -22,17 +22,16 @@
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
-|Service Name|Functionality|Usability|Reliability|Performance|Supportability|
+|Service Name||||||
 |---|---|---|---|---|---|
-|Google Forms||||||
-|SurveyMonkey||||||
-|Survio||||||
-|SurveyJS||||||
-|Система “ОСА”||||||
+|[Google Forms](https://www.google.com/intl/ru_ua/forms/about/)||||||
+|[SurveyMonkey](https://ru.surveymonkey.com/)||||||
+|[Survio](https://www.survio.com/ru/)||||||
+|[SurveyJS](https://surveyjs.io/)||||||
+|Система [“ОСА”](https://oca.com.ua/)||||||
 
 ## Висновки
 
-*[Робляться висновки щодо доцільності розробки нової або модифікації існуючої інформаційної системи, необхідності та способів інтеграції з системами(сервісами) третіх сторін, тощо.]*
 
 ## Посилання
 
