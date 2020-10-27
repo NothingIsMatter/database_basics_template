@@ -11,7 +11,7 @@ end title
 actor "Гість" as Guest
 actor "Користувач" as User
 actor "Аналітик" as Analyst
-actor "Інтерв'юер" as Interviewer
+actor "Замовник" as Customer
 actor "Адміністратор" as Admin
 
 ' UCes for Guest:
@@ -27,9 +27,9 @@ usecase "<b>UC_1</b>\nПерегляд результатів\nопитуван�
 usecase "<b>UC_2</b>\nВикористання інструментів" as UC2_Analyst
 
 
-' UCes for Interviewer:
-usecase "<b>UC_1</b>\nСтворення нового\nопитування" as UC1_Interviewer
-usecase "<b>UC_2</b>\nРедагування опитувань" as UC2_Interviewer
+' UCes for Customer:
+usecase "<b>UC_1</b>\nСтворення нового\nопитування" as UC1_Customer
+usecase "<b>UC_2</b>\nРедагування опитувань" as UC2_Customer
 
 ' UCes for Admin:
 usecase "<b>UC_1</b>\nАвтоматизована передача анкет\nвід респондентів до інтерв’юерів" as UC1_Admin
@@ -37,11 +37,11 @@ usecase "<b>UC_2</b>\nДоступ до можливостей та прав і�
 
 ' Actors connections
 User -u-|> Guest
-Interviewer -u-|> Guest
+Customer -u-|> Guest
 Analyst -u-|> Guest
 
 Admin -u--|> User
-Admin -u--|> Interviewer
+Admin -u--|> Customer
 Admin -u--|> Analyst
 
 ' UCes connectios
@@ -53,9 +53,11 @@ User -u-> UC2_User
 
 Analyst -r-> UC1_Analyst
 Analyst -d-> UC2_Analyst
+Analyst -u-> UC1_Customer
+Analyst -u-> UC2_Customer
 
-Interviewer -u-> UC1_Interviewer
-Interviewer -u-> UC2_Interviewer
+Customer -u-> UC1_Customer
+Customer -u-> UC2_Customer
 
 Admin -d--> UC1_Admin
 Admin -d-> UC2_Admin
