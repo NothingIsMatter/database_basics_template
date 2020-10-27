@@ -1,18 +1,5 @@
 # Модель прецедентів
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
 
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
+![uml](http://www.plantuml.com/plantuml/png/bLRFJlD64B_xALPSlbFIBwQggayGWQXKzLQfueOKcMI1gC6kR8UgLGyGsfG30jGYK54hIda1ooJ53Odp2kDNw9DqThmPhGlRyXr0pkpixy_ixDXhKUo5SN-_vuJTtRrOx4cl8qDdPIVmOn5rlvMhxeUY7VI2S7MxvxM_R7wE_xnT-KwiR3StDpvfDUeDH_gTnKOdxiOzQUvlV5pP3tSmBWuXBQwA8m49p622WK5n3AdwLPoAB_hXWTprAXWVLJ5-XHn6C8OdJ8SvmesB8OmfD4EiAqX9Kwd5yTfn48eb-5bnulBfal0YyMbVHZ6ltK2EC1cjavJYHyhQZ6J8IHUeDe4dX1b01XDAMFUztZS6q50fA2s-ASxK0wLzviSoFEZAhojm8vYYs9dMTOYi0wMZ1ExiTtt7UICsDsGaTd07ANxdz2FPzY8fbkW4MesL3xQRMpxyZboNZ3D4p7E1UdD8yUy1SaoPF3S9IMbpez4Y-7-Zknhz0j9I6nf_P7mb7EKV5sU8z1eMLxCOjgZ4TbTqh0ayB1e4PiXBeHbo_F2_hXIwpTGjxZp1FHE1tXAXZC6SAZP3MgB2h1nZ6M6p07Rp4lgoHhz-ZYOOZDjTGoqJb5aNtLds0x-bBXl30tRaEOm4_NX4PBmLoazv4J3Hnjbe4ONzq7-2pAmkbvzwbZeDCQV0buxBii0r_PXNmEhf3bbIOkIA6IriFmnoOn1O75dQoLeXzxymbotdGDNvdanCzKsvnZGrfd8wfEA8-c9cpYjk0vFGh1wD0qlT-7eIuO2kQAxz9GBcMk2el1h6rCMTARAFhB84_iYL8nvgVn_-KeurjSob9tNlMNHM0HbUFK7ac4RjUu8UfWjrA2o3fyL6c5ewtIBpcC-IHDfEyH9oFK7cfMcOefu_aJU3j5n3qh_AIK67cTWe8TdooxIa-iA0X8-Pf_kwUXb4eXtulcp7tS2F73K9HArV-wwfNr96JrJY-ffLOWuXgv2AAQXgnC2gBcWmRZfM53c4hFAQnel23F9SP-rD7hwLa6k6EZKLuz77RaAzcmAcpOx6OAbinYGrWYybkFO45cH4kQ2qoBtEKOtvFCY7hB-iTe80GHtzTIE-2dez4Q4BkLyNh_YWgJlm6_m1zt0lu0PkOIWmEgt3i0vt-4HZ6flq59zeLZgObQcDDVUj-vO-XxI2DNp63xv_0000)
 
-*Вбудовування зображень діаграм здійснюється з використанням сервісу plantuml.com. Сервіси взаємодіють так, як зобраажено на діаграмі нижче.*
-
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/boldak/database_basics_template/master/src/uml/example.puml)
-
-*Для вбудовування необхідно використовувати:*
-```
-![IMAGE TITLE](http://www.plantuml.com/plantuml/proxy?cache=no&src=URL_OF_PUML_SOURCE)
-```
-Наприклад, зображена вище діаграма вбудована за допомогою:
-```
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/boldak/database_basics_template/master/src/uml/example.puml)
-```
