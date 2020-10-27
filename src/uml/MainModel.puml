@@ -1,0 +1,70 @@
+@startuml
+right header
+<font size=24 color=black>Package: <b>UCD_1.1
+end header
+
+title
+<font size=18 color=black>Сервіс анкетувань Survegana
+<font size=16 color=black>Модель прецедентів
+end title
+
+actor "Гість" as Guest
+actor "Користувач" as User
+actor "Аналітик" as Analyst
+actor "Інтерв'юер" as Interviewer
+actor "Адміністратор" as Admin
+
+' UCes for Guest:
+usecase "<b>UC_1</b>\nРеєстрація нового\nкористувача" as UC1_Guest
+usecase "<b>UC_2</b>\nАвторизація існуючого\nкористувача" as UC2_Guest
+
+' UCes for User:
+usecase "<b>UC_1</b>\nРедагування даних\nкористувача" as UC1_User
+usecase "<b>UC_2</b>\nПошук та заповнення\nопитування" as UC2_User
+usecase "<b>UC_3</b>\nЗаповнення опитувань" as UC3_User
+
+' UCes for Analyst:
+usecase "<b>UC_1</b>\nПерегляд результатів\nопитувань" as UC1_Analyst
+usecase "<b>UC_2</b>\nВикористання інструментів" as UC2_Analyst
+
+
+' UCes for Interviewer:
+usecase "<b>UC_1</b>\nСтворення нового\nопитування" as UC1_Interviewer
+usecase "<b>UC_2</b>\nРедагування опитувань" as UC2_Interviewer
+
+' UCes for Admin:
+usecase "<b>UC_1</b>\nАвтоматизована передача анкет\nвід респондентів до інтерв’юерів" as UC1_Admin
+usecase "<b>UC_2</b>\nДоступ до можливостей та прав інтерв’юера\nта аналітика" as UC2_Admin
+
+' Actors connections
+User -u-|> Guest
+Interviewer -u-|> Guest
+Analyst -u-|> Guest
+
+Admin -u--|> User
+Admin -u--|> Interviewer
+Admin -u--|> Analyst
+
+' UCes connectios
+Guest -u-> UC1_Guest
+Guest -u-> UC2_Guest
+
+User -u-> UC1_User
+User -u-> UC2_User
+User -d--> UC3_User
+
+Analyst -r-> UC1_Analyst
+Analyst -d-> UC2_Analyst
+
+Interviewer -u-> UC1_Interviewer
+Interviewer -u-> UC2_Interviewer
+
+Admin -d--> UC1_Admin
+Admin -d-> UC2_Admin
+
+right footer
+Survegana poll system. Модель прецедентів.
+НТУУ КПІ ім.І.Сікорського
+Киів-2020
+end footer
+@enduml
