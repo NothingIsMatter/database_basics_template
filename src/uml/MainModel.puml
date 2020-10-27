@@ -20,8 +20,7 @@ usecase "<b>UC_2</b>\nАвторизація існуючого\nкористу�
 
 ' UCes for User:
 usecase "<b>UC_1</b>\nРедагування даних\nкористувача" as UC1_User
-usecase "<b>UC_2</b>\nПошук та заповнення\nопитування" as UC2_User
-usecase "<b>UC_3</b>\nЗаповнення опитувань" as UC3_User
+usecase "<b>UC_2</b>\nЗаповнення опитувань" as UC2_User
 
 ' UCes for Analyst:
 usecase "<b>UC_1</b>\nПерегляд результатів\nопитувань" as UC1_Analyst
@@ -51,7 +50,6 @@ Guest -u-> UC2_Guest
 
 User -u-> UC1_User
 User -u-> UC2_User
-User -d--> UC3_User
 
 Analyst -r-> UC1_Analyst
 Analyst -d-> UC2_Analyst
