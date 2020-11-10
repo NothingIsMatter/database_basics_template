@@ -8,45 +8,32 @@ title
 <font size=16 color=black>Модель прецедентів
 end title
 
-actor "Гість" as Guest
-actor "Користувач" as User
+actor "Респондент" as User
 actor "Аналітик" as Analyst
 actor "Замовник" as Customer
-actor "Адміністратор" as Admin
-
-' UCes for Guest:
-usecase "<b>UC_1</b>\nРеєстрація нового\nкористувача" as UC1_Guest
-usecase "<b>UC_2</b>\nАвторизація існуючого\nкористувача" as UC2_Guest
+actor "Менеджер" as Manager
 
 ' UCes for User:
-usecase "<b>UC_1</b>\nРедагування даних\nкористувача" as UC1_User
+usecase "<b>UC_1</b>\nРедагування даних\nреспондента" as UC1_User
 usecase "<b>UC_2</b>\nЗаповнення опитувань" as UC2_User
 
 ' UCes for Analyst:
 usecase "<b>UC_1</b>\nПерегляд результатів\nопитувань" as UC1_Analyst
 usecase "<b>UC_2</b>\nВикористання інструментів" as UC2_Analyst
 
-
 ' UCes for Customer:
 usecase "<b>UC_1</b>\nСтворення нового\nопитування" as UC1_Customer
 usecase "<b>UC_2</b>\nРедагування опитувань" as UC2_Customer
 
-' UCes for Admin:
-usecase "<b>UC_1</b>\nАвтоматизована передача анкет\nвід респондентів до інтерв’юерів" as UC1_Admin
-usecase "<b>UC_2</b>\nДоступ до можливостей та прав інтерв’юера\nта аналітика" as UC2_Admin
+' UCes for Manager:
+usecase "<b>UC_1</b>\nАвтоматизована передача анкет\nвід респондентів до інтерв’юерів" as UC1_Manager
+usecase "<b>UC_2</b>\nДоступ до можливостей та прав інтерв’юера\nта аналітика" as UC2_Manager
 
 ' Actors connections
-User -u-|> Guest
-Customer -u-|> Guest
-Analyst -u-|> Guest
 
-Admin -u--|> User
-Admin -u--|> Customer
-Admin -u--|> Analyst
-
-' UCes connectios
-Guest -u-> UC1_Guest
-Guest -u-> UC2_Guest
+Manager -u--|> User
+Manager -u--|> Customer
+Manager -u--|> Analyst
 
 User -u-> UC1_User
 User -u-> UC2_User
@@ -59,8 +46,8 @@ Analyst -u-> UC2_Customer
 Customer -u-> UC1_Customer
 Customer -u-> UC2_Customer
 
-Admin -d--> UC1_Admin
-Admin -d-> UC2_Admin
+Manager -d--> UC1_Manager
+Manager -d-> UC2_Manager
 
 right footer
 Survegana poll system. Модель прецедентів.
