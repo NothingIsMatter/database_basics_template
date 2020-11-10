@@ -1,18 +1,5 @@
 # Модель прецедентів
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
 
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
+![uml](http://www.plantuml.com/plantuml/png/ZLNVIXjV4BxVfpXuyxioFnDAAQABaa9l2yKxGTRagA6RtR9_2Yszi96cDwBIYgNIOgqliAn9JJMxUONPL-YJTCwV7VOqNUfDE9apyyqtCz-PNGiZ9uZYlci5lTszYErnfyi3QsN7zo8MzbxprTO3rl5TFrZTTftES_if_ZYxV9cjRDiRxSTRpKRJubwt3BIYNkJoQdppaH4Fbp0kzY4jpegt31B8u1ODW-80Kl6lE6JFuk0bttKynq1vQA9yWHn6C8Ox380P0ewB8OobAKEqCqWbAyN6SZgH7x05-2YoulNX0dD2zYJcOKHtvv0Zp0JlDPdYlVJQ27b0JYV8Du4xX1d016wbmxhdkAygG9_GOmevGcJaqux3oEyRG2EO8irCCzh7V0F1G45s-ptFilvZ6sqUiXsCa5oNhJZa7IVaR45sVwkvyl-slUd1Dop_b726Y7dC89CSShY675rkvyk3H1NORcv9-3_HMnhz15B53Skv8Nn17EaV54U8T9yiBPN5A4iqjxugET04hajnG8PvfId37E_-MPL0hojAJ6ccfpGkeNCqJQfY9Ee2oc2kfrvB_aBAV0pNg9PZ637vvmQHKR7OpKI951rhSY9zdQAkWWymgTPF3PAgabf0p2dGWoXh8TngFQJGse8kCKKgqr6xJ8MPXKWNAgL4hwcbPjJryo10emRvR6eA81d3L3HVIZdNkH86CpskaP9GPJDX92uhFK6Kl11DLbqqGf6vwlf0xRPV-v-B8t4KrzG3oQwk0QUGQn7F59vS8J_W3eccwWup_cHYpchX9P3-FIaacvvoIynjLNc9j63MnJuASRTw7kz4FTyBBI5rjXWllh7rXjIzDerQH8RDah3296m2nxIKGAPL8z4aYKjeILZXPrUsLDL8IuLOs_JogoPwmKGxq9vbThheAl-v2yAcAimRGvJbQJxAl3B3T5-GWhWXoP3LhivEVQztV3_2IFfciXU-wx8GQV5-WztZCzcmu2jyXokuOd0E5p1aQ9qsODY0Ipp91OFgEyIJVEWMUar4u69hgRKaFxAQmngUuxxx6m00)
 
-*Вбудовування зображень діаграм здійснюється з використанням сервісу plantuml.com. Сервіси взаємодіють так, як зобраажено на діаграмі нижче.*
-
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/boldak/database_basics_template/master/src/uml/example.puml)
-
-*Для вбудовування необхідно використовувати:*
-```
-![IMAGE TITLE](http://www.plantuml.com/plantuml/proxy?cache=no&src=URL_OF_PUML_SOURCE)
-```
-Наприклад, зображена вище діаграма вбудована за допомогою:
-```
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/boldak/database_basics_template/master/src/uml/example.puml)
-```

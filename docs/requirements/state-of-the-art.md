@@ -6,11 +6,11 @@
 
 Огляд документу:
 
-1. [Основні визначення](https://github.com/NothingIsMatter/database_basics_template/blob/task1/docs/requirements/state-of-the-art.md#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96-%D0%B2%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F)
-2. [Підходи та способи вирішення завання](https://github.com/NothingIsMatter/database_basics_template/blob/task1/docs/requirements/state-of-the-art.md#%D0%BF%D1%96%D0%B4%D1%85%D0%BE%D0%B4%D0%B8-%D1%82%D0%B0-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%B8-%D0%B2%D0%B8%D1%80%D1%96%D1%88%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F)
-3. [Порівняльна характеристика існуючих засобів рішення завдання](https://github.com/NothingIsMatter/database_basics_template/blob/task1/docs/requirements/state-of-the-art.md#%D0%BF%D0%BE%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BB%D1%8C%D0%BD%D0%B0-%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0-%D1%96%D1%81%D0%BD%D1%83%D1%8E%D1%87%D0%B8%D1%85-%D0%B7%D0%B0%D1%81%D0%BE%D0%B1%D1%96%D0%B2-%D0%B2%D0%B8%D1%80%D1%96%D1%88%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F)
-4. [Висновок](https://github.com/NothingIsMatter/database_basics_template/blob/task1/docs/requirements/state-of-the-art.md#%D0%B2%D0%B8%D1%81%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8)
-5. [Посилання](https://github.com/NothingIsMatter/database_basics_template/blob/task1/docs/requirements/state-of-the-art.md#%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F)
+1. [Основні визначення](https://github.com/NothingIsMatter/database_basics_template/blob/master/docs/requirements/state-of-the-art.md#%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96-%D0%B2%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F)
+2. [Підходи та способи вирішення завання](https://github.com/NothingIsMatter/database_basics_template/blob/master/docs/requirements/state-of-the-art.md#%D0%BF%D1%96%D0%B4%D1%85%D0%BE%D0%B4%D0%B8-%D1%82%D0%B0-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%B8-%D0%B2%D0%B8%D1%80%D1%96%D1%88%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F)
+3. [Порівняльна характеристика існуючих засобів рішення завдання](https://github.com/NothingIsMatter/database_basics_template/blob/master/docs/requirements/state-of-the-art.md#%D0%BF%D0%BE%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BB%D1%8C%D0%BD%D0%B0-%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0-%D1%96%D1%81%D0%BD%D1%83%D1%8E%D1%87%D0%B8%D1%85-%D0%B7%D0%B0%D1%81%D0%BE%D0%B1%D1%96%D0%B2-%D0%B2%D0%B8%D1%80%D1%96%D1%88%D0%B5%D0%BD%D0%BD%D1%8F-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F)
+4. [Висновок](https://github.com/NothingIsMatter/database_basics_template/blob/master/docs/requirements/state-of-the-art.md#%D0%B2%D0%B8%D1%81%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8)
+5. [Посилання](https://github.com/NothingIsMatter/database_basics_template/blob/master/docs/requirements/state-of-the-art.md#%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F)
 
 ## Основні визначення
 
@@ -38,16 +38,17 @@
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
-|Service Name||||||
-|---|---|---|---|---|---|
-|[Google Forms](https://www.google.com/intl/ru_ua/forms/about/)||||||
-|[SurveyMonkey](https://ru.surveymonkey.com/)||||||
-|[Survio](https://www.survio.com/ru/)||||||
-|[SurveyJS](https://surveyjs.io/)||||||
-|Система [“ОСА”](https://oca.com.ua/)||||||
+|Сервіс\Функції|Зручний онлайн-доступ|Цілодобова підтримка користувачів|Робота з даними в форматах документів|Можливість завантажувати файли|Наявність таблиць\діаграм|Можливість розширення|Вартість|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|[Google Forms](https://www.google.com/intl/ru_ua/forms/about/)|+|-|+|+|+|+|0$-25$|
+|[SurveyMonkey](https://ru.surveymonkey.com/)|+|+|+|+|+|+-|39€/99€ індивідуальні плани, бізнес плани 30€/70€|
+|[Survio](https://www.survio.com/ru/)|+|-|-|-|+|+|0$/15$/33$/66$ щомісяця|
+|[SurveyJS](https://surveyjs.io/)|+|+|-|+|+|+-|499$ SurveyJS Creator license|
+|Система [“ОСА”](https://oca.com.ua/)|-|+-|+|-|+-|+-|0$, можливість найму для аналізу даних та масштабного опитування.|
 
 ## Висновки
 
+Як можна побачити, представлені сервіси використовують основний масив інструментів, які є основоположними для функціонування системи. Різниця між сервісами полягає у тому, деякі більш розраховані на недосвідченого користувача, тому зручніші і дешевші, але мають менший функціонал. Тому відміннсоті заключаются більше в цілях використання. В нашому контексті - потрібна система, яка-б змогла задовольнити базові запити замовника.
 
 ## Посилання
 1. [Анкета](https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D0%B0) 
