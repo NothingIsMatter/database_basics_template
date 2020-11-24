@@ -19,11 +19,12 @@ usecase "<b>UC_2</b>\nЗаповнення опитувань" as UC2_User
 
 ' UCes for Analyst:
 usecase "<b>UC_1</b>\nПерегляд результатів\nопитувань" as UC1_Analyst
-usecase "<b>UC_2</b>\nВикористання інструментів" as UC2_Analyst
+usecase "<b>UC_2</b>\nВикористання інструментів\nдля формування звітності" as UC2_Analyst
+usecase "<b>UC_3</b>\nСтворення опитувань" as UC3_Analyst
 
 ' UCes for Customer:
-usecase "<b>UC_1</b>\nСтворення нового\nопитування" as UC1_Customer
-usecase "<b>UC_2</b>\nРедагування опитувань" as UC2_Customer
+usecase "<b>UC_1</b>\nПерегляд результатів опитування" as UC1_Customer
+
 
 ' UCes for Manager:
 usecase "<b>UC_1</b>\nАвтоматизована передача анкет\nвід респондентів до інтерв’юерів" as UC1_Manager
@@ -31,9 +32,8 @@ usecase "<b>UC_2</b>\nДоступ до можливостей та прав і�
 
 ' Actors connections
 
+
 Manager -u--|> User
-Manager -u--|> Customer
-Manager -u--|> Analyst
 
 User -u-> UC1_User
 User -u-> UC2_User
@@ -41,10 +41,9 @@ User -u-> UC2_User
 Analyst -r-> UC1_Analyst
 Analyst -d-> UC2_Analyst
 Analyst -u-> UC1_Customer
-Analyst -u-> UC2_Customer
-
+Analyst -d-> UC3_Analyst
 Customer -u-> UC1_Customer
-Customer -u-> UC2_Customer
+
 
 Manager -d--> UC1_Manager
 Manager -d-> UC2_Manager
