@@ -14,39 +14,39 @@ actor "Замовник" as Customer
 actor "Менеджер" as Manager
 
 ' UCes for User:
-usecase "<b>UC_1</b>\nРедагування даних\nреспондента" as UC1_User
-usecase "<b>UC_2</b>\nЗаповнення опитувань" as UC2_User
+usecase "<b>UC_1.1</b>\nАвторизація користувача" as UC1.1_User
+usecase "<b>UC_1.2</b>\nРеєстрація користувача" as UC1.2_User
+usecase "<b>UC_1.3</b>\nЗаповнення опитувань" as UC1.3_User
 
 ' UCes for Analyst:
-usecase "<b>UC_1</b>\nПерегляд результатів\nопитувань" as UC1_Analyst
-usecase "<b>UC_2</b>\nВикористання інструментів\nдля формування звітності" as UC2_Analyst
-usecase "<b>UC_3</b>\nСтворення опитувань" as UC3_Analyst
+usecase "<b>UC_1.5</b>\nАналіз результатів\nопитування та \nформування звітності" as UC1.5_Analyst
+usecase "<b>UC_1.4</b>\nСтворення опитувань" as UC1.4_Analyst
+
 
 ' UCes for Customer:
-usecase "<b>UC_1</b>\nПерегляд результатів опитування" as UC1_Customer
+usecase "<b>UC_1.6</b>\nПерегляд результатів опитування" as UC1.6_Customer
 
 
 ' UCes for Manager:
-usecase "<b>UC_1</b>\nАвтоматизована передача анкет\nвід респондентів до інтерв’юерів" as UC1_Manager
-usecase "<b>UC_2</b>\nДоступ до можливостей та прав інтерв’юера\nта аналітика" as UC2_Manager
+usecase "<b>UC_1.7</b>\nАвтоматизована передача анкет\nвід респондентів до аналітиків" as UC1.7_Manager
+usecase "<b>UC_1.8</b>\nДоступ до можливостей та прав респондента\nта аналітика" as UC1.8_Manager
 
 ' Actors connections
 
 
-Manager -u--|> User
 
-User -u-> UC1_User
-User -u-> UC2_User
+User -u-> UC1.1_User
+User -u-> UC1.2_User
+User -u-> UC1.3_User
 
-Analyst -r-> UC1_Analyst
-Analyst -d-> UC2_Analyst
-Analyst -u-> UC1_Customer
-Analyst -d-> UC3_Analyst
-Customer -u-> UC1_Customer
+Analyst -r-> UC1.5_Analyst
+Analyst -d-> UC1.4_Analyst
+Analyst -u-> UC1.6_Customer
+Customer -u-> UC1.6_Customer
 
 
-Manager -d--> UC1_Manager
-Manager -d-> UC2_Manager
+Manager -d--> UC1.7_Manager
+Manager -d-> UC1.8_Manager
 
 right footer
 Survegana poll system. Модель прецедентів.
