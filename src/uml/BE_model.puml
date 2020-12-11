@@ -38,10 +38,10 @@ entity User
 
 
   Question "0, *" -u- "1, 1" Survey
-  Expert "1, 1" -u- "0, 1" Answer
-  User "0, *" -u- "1, 1" Question
-  Answer "0, *" -d- "1, 1" User
+  Answer "0, *" -u- "0, 1" PossibleAnswers
+  Answer "0, *" -u- "1, 1" User
   PossibleAnswers "0, *" -u- "1, 1" Question
+
 
   Survey.id -d-* Survey
   Survey.name -d-* Survey

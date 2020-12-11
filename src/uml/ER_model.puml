@@ -2,13 +2,10 @@
 entity User <<ENTITY>> {
     id:INT
     username:TEXT
+    occupation:TEXT
     data:INT
   }
 
-  entity Expert <<ENTITY>>{
-    id:INT
-    occupation:TEXT
-  }
 
   entity Survey <<ENTITY>>{
     id:INT
@@ -33,8 +30,7 @@ entity User <<ENTITY>> {
   }
 
   Question "0, *" -u- "1, 1" Survey
-  Expert "1, 1" -u- "0, 1" Answer
-  User "0, *" -u- "1, 1" Question
+  Answer "0, *" -u- "0, 1" PossibleAnswers
   Answer "0, *" -u- "1, 1" User
   PossibleAnswers "0, *" -u- "1, 1" Question
 @enduml
