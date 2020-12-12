@@ -12,4 +12,4 @@
 
 # DDL-модель
 
-![DDL scheme](https://raw.githubusercontent.com/NothingIsMatter/survegana/task1/assets/images/ddl-scheme.jpg)
+![DDL scheme](https://raw.githubusercontent.com/NothingIsMatter/survegana/master/src/images/ddl-scheme.jpg)

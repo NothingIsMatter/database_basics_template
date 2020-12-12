@@ -1,7 +1,7 @@
 # Модель прецедентів
 
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/NothingIsMatter/survegana/master/src/uml/MainModel.puml)
+![uml](http://www.lantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/NothingIsMatter/survegana/master/src/uml/MainModel.puml)
 
 # Специфікації прецедентів
 
