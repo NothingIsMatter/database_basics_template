@@ -26,7 +26,7 @@ DROP TABLE IF EXISTS `questionnaire`.`survey` ;
 CREATE TABLE IF NOT EXISTS `questionnaire`.`survey` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) CHARACTER SET 'utf8' NOT NULL,
-  `Topic` VARCHAR(45) CHARACTER SET 'utf8' NULL DEFAULT NULL,
+  `topic` VARCHAR(45) CHARACTER SET 'utf8' NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 3
@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `questionnaire`.`correctAnswers` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `text` VARCHAR(150) CHARACTER SET 'utf8' NOT NULL,
   `respondent_id` INT NOT NULL,
-  `Question_id` INT NOT NULL,
+  `question_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_correctAnswers_respondent1_idx` (`respondent_id` ASC) VISIBLE,
   INDEX `fk_correctAnswers_Question1_idx` (`Question_id` ASC) VISIBLE,
@@ -127,7 +127,7 @@ DROP TABLE IF EXISTS `questionnaire`.`incorrectAnswers` ;
 CREATE TABLE IF NOT EXISTS `questionnaire`.`incorrectAnswers` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `text` VARCHAR(150) CHARACTER SET 'utf8' NOT NULL,
-  `Question_id` INT NOT NULL,
+  `question_id` INT NOT NULL,
   PRIMARY KEY (`id`, `Question_id`),
   INDEX `fk_incorrectAnswers_Question1_idx` (`Question_id` ASC) VISIBLE,
   CONSTRAINT `fk_incorrectAnswers_Question1`
@@ -137,6 +137,15 @@ ENGINE = InnoDB
 AUTO_INCREMENT = 5
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
+
+DROP TABLE IF EXISTS `questionnaire`.`role` ;
+
+CREATE TABLE IF NOT EXISTS `questionnaire`.`role` (
+                                                 `id` INT NOT NULL,
+                                                 `name` TEXT NOT NULL,
+                                                 PRIMARY KEY (`id`),
+                                                 UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
+    ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
@@ -197,15 +206,15 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `questionnaire`;
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (1, 'Beernadin Olexandr', 'olxbernadin@gmail.com', 'chahamen', 'manager');
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (2, 'Ilkiv Maxim', 'ilkyv.maksym@gmail.cum', 'master_of_gym', 'analyst');
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (3, 'Kaminskyi Yeahvhen', 'kaminskiy533@gmail.com', 'toe_tek_puk_tuk_bam', 'user');
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (4, 'Rudenko Stanislave', 'stasrudenko@ukr.net', '88005553535', 'respondent');
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (5, 'Sukach Artam', 'artemsukach.official@gmail.com', 'artasukach', 'respondent');
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (6, 'Yevtushock Oleg', 'mineol5005210@gmail.com', 'cyberoleg', 'respondent');
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (7, 'Varchenko Yeahvhenii', 'yevheniivarchenko@gmail.com', 'zhmyshok', 'respondent');
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (8, 'Yaschenko Yeahvhenii', 'hectorlitopisec@gmail.com', 'billy_herington', 'respondent');
-INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (9, 'Gubenko Vladislave', 'gubenkovlad10@gmail.com', 'a_to_kuda', 'respondent');
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (1, 'Beernadin Olexandr', 'olxbernadin@gmail.com', 'chahamen', 1);
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (2, 'Ilkiv Maxim', 'ilkyv.maksym@gmail.cum', 'master_of_gym', 2);
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (3, 'Kaminskyi Yeahvhen', 'kaminskiy533@gmail.com', 'toe_tek_puk_tuk_bam', 3);
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (4, 'Rudenko Stanislave', 'stasrudenko@ukr.net', '88005553535', 4);
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (5, 'Sukach Artam', 'artemsukach.official@gmail.com', 'artasukach', 1);
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (6, 'Yevtushock Oleg', 'mineol5005210@gmail.com', 'cyberoleg', 2);
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (7, 'Varchenko Yeahvhenii', 'yevheniivarchenko@gmail.com', 'zhmyshok', 3);
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (8, 'Yaschenko Yeahvhenii', 'hectorlitopisec@gmail.com', 'billy_herington', 4);
+INSERT INTO `questionnaire`.`user` (`id`, `name`, `email`, `password`, `role`) VALUES (9, 'Gubenko Vladislave', 'gubenkovlad10@gmail.com', 'a_to_kuda', 4);
 
 COMMIT;
 
@@ -220,7 +229,14 @@ INSERT INTO `questionnaire`.`respondent` (`id`, `specialization`, `user_id`) VAL
 
 COMMIT;
 
+START TRANSACTION;
+USE `SurvExp`;
+INSERT INTO `questionnaire`.`role` (`id`, `name`) VALUES (1, 'Manager');
+INSERT INTO `questionnaire`.`role` (`id`, `name`) VALUES (2, 'Analyst');
+INSERT INTO `questionnaire`.`role` (`id`, `name`) VALUES (3, 'Expert');
+INSERT INTO `questionnaire`.`role` (`id`, `name`) VALUES (3, 'Respondent');
 
+COMMIT;
 -- -----------------------------------------------------
 -- Data for table `questionnaire`.`correctAnswers`
 -- -----------------------------------------------------
