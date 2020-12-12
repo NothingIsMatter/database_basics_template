@@ -9,3 +9,7 @@
 # Модель бізнес-об'єктів
 
 ![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/NothingIsMatter/survegana/master/src/uml/BE_model.puml)
+
+# DDL-модель
+
+![DDL scheme](https://raw.githubusercontent.com/NothingIsMatter/survegana/task1/assets/images/ddl-scheme.jpg)
