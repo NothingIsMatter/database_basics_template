@@ -2,7 +2,7 @@
 entity User <<ENTITY>> {
     id:INT
     username:TEXT
-    occupation:TEXT
+    role:TEXT
     data:INT
   }
 

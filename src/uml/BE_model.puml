@@ -1,13 +1,9 @@
 @startuml
-entity User
+  entity User
   entity User.id
   entity User.username
   entity User.data
-
-  entity Expert
-  entity Expert.id
-  entity Expert.occupation
-
+  entity User.role
 
   entity Survey
   entity Survey.id
@@ -28,32 +24,28 @@ entity User
   entity PossibleAnswers.text
 
 
-
-  User.id -u-* User
-  User.username -u-* User
-  User.role -u-* User
-
-  Expert.id -u-* Expert
-  Expert.occupation -u-* Expert
-
-
   Question "0, *" -u- "1, 1" Survey
   Answer "0, *" -u- "0, 1" PossibleAnswers
   Answer "0, *" -u- "1, 1" User
   PossibleAnswers "0, *" -u- "1, 1" Question
 
 
+  User.id -u-* User
+  User.username -u-* User
+  User.role -u-* User
+  User.data -u-* User
+
+
+
   Survey.id -d-* Survey
   Survey.name -d-* Survey
   Survey.topic -d-* Survey
-  Survey.deadline -d-* Survey
 
   Question.id -u-* Question
   Question.type -u-* Question
   Question.text -u-* Question
 
   Answer.id -u-* Answer
-  Answer.date -u-* Answer
   Answer.text -u-* Answer
 
   PossibleAnswers.id -u-* PossibleAnswers
