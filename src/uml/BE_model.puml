@@ -1,5 +1,5 @@
 @startuml
-'entity User
+  entity User
   entity User.id
   entity User.username
   entity User.data
